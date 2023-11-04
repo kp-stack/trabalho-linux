@@ -1,128 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
-    <!--Configurações de teclado e "responsividade"-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--estilo css, ícone de página-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="img/icone.avif" type="image/x-icon">
 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Maltodextrina</title>
 
-
-
-    <title>Linux</title>
 </head>
 <body>
+    <nav id="navbar">
+        <div id="container">
+            <h1 class="logo">Maltodextrina</h1>
+            <ul id="navbar-items">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#aplication">Sobre</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>       
+        </div>
+    </nav>
 
-    <div class="navbar">
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#main">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#duvidas">Dúvidas</a>
-        </li>
-       
-      </ul>
-    </div>
+    <header id="text-box">
+        <div>
+            <h2 id="main-title">
+                Maltodextrina
+            </h2>
+            <p id="main-text">Suplemento alimentar destinado para atletas de alto rendimento</p> <br>
+            <a href="#aplication" class="btn">Saiba mais</a>
+        </div>
+    </header>
 
 
-    <section class="background">
-       
+    <!--Main-->
+
+    <!--Fabricantes do produtos-->
+
+    <section id="fabricantes" >
+        <div class="headline">Fabricantes</div>
+        <div class="main-companies">
+            <img src="img/logo_33128.gif" class="companies">
+            <img src="img/blackskull.png" class="companies">
+            <img src="img/integral-medica.png" class="companies">
+            <img src="img/max-titanium.png" class="companies">
+        </div>
     </section>
 
-    <section id="main">
 
-       <h1 class="title"> O que é o Linux</h1>
+    <!--Aplicações do produto-->
 
-
-
-       <div class="main-linux">
-
-          <div class="box-linux">
-          <p>O Linux é um sistema speracional. Dentre todos os sistemas operacionais, o mais conhecido é o Windows, da Microsoft. O Linux realiza as mesmas funções, porém de maneiras diferentes. Existem muitas empresas e iniciativas sem fins lucrativos que desenvolvem versões diferentes do Linux. Alguma são feitas para usuário avançados, e outras são para iniciantes. Cada uma dessas versões se chama “distribuição”. Uma distribuição é responsável pela manutenção dos softwares que compõem o sistema, suas atualizações, o programa de instalação, configurações e aplicativos padrão.</p>
-          </div> 
-
-          <div class="box-linux">
-            <p>O Linux é um sistema operacional de código aberto com um kernel que controla o hardware do computador. Ele oferece uma estrutura hierárquica de arquivos, suporta múltiplos usuários e permite a execução de vários programas simultaneamente. Os usuários interagem com o sistema por meio de uma interface de linha de comando (CLI) ou uma interface gráfica de usuário (GUI). Diferentes distribuições Linux empacotam o kernel com outros componentes para criar sistemas completos, e a comunidade de desenvolvedores contribui para seu constante aprimoramento. </p>
-            </div> 
-
-       </div> 
-      </section>
-
-      <br><br>
-
-      <section id="duvidas">
-
-        <h1 class="title" color="white"> Dúvidas comuns</h1>
-
-        <div class="box-linux">
-          <p>Aprender a usar o Linux pode variar de pessoa para pessoa, mas não é necessariamente complicado. A curva de aprendizado pode ser íngreme no início, especialmente se você está acostumado com outros sistemas operacionais, como o Windows, mas muitos recursos e comunidades online estão disponíveis para ajudar.</p>
-          </div> 
-
-          <div class="box-linux">
-            <p>O Linux é menos vulnerável a vírus em comparação com o Windows devido à sua estrutura de segurança, mas não é imune. Os vírus direcionados ao Linux existem, mas são menos comuns devido à diversidade das distribuições e medidas de segurança.</p>
+    <section id="aplication" >
+        <div class="headline">Aplicações de uso</div>
+        <div id="container-aplication">
+            
+            <div class="tips">
+                <span class="title-aplication">Suplemento Esportivo:</span>
+                <br><p> Maltodextrina é usada como fonte de energia rápida em bebidas esportivas e suplementos para atletas.</p>
             </div>
 
-          <div class="box-linux">
-              <p>Não todos os softwares do Windows são compatíveis com o Linux, mas muitos têm alternativas no Linux. O Wine é um programa que permite executar alguns aplicativos do Windows no Linux, mas a compatibilidade pode variar.</p>
-              </div>
+            <div class="tips">
+                <span class="title-aplication">Indústria Alimentícia:</span>
+                <br><p> É um espessante e agente de textura em alimentos processados, como sopas e molhos.</p>
+            </div>
 
+            <div class="tips">
+                <span class="title-aplication">Nutrição Clínica:</span>
+                <br><p> Usada em produtos médicos para nutrição enteral como fonte calórica e carboidrato para pacientes com necessidades nutricionais específicas.</p>
+            </div>
+            
+        </div>
+    </section>
 
-          <div class="box-linux">
-                <p>Você pode instalar programas no Linux de várias maneiras. A maioria das distribuições oferece uma "Central de Programas" onde você pode procurar, selecionar e instalar programas com facilidade. Você também pode usar o Terminal para instalar programas com comandos específicos.</p>
+    <!--Produto-->
+
+    <section id="product">
+        <br><br><br>
+        <div class="headline">Maltodextrina</div>
+        <br><br>
+
+        <div id="main-product">
+            <div id="container-product">
+
+                <div class="about-product"> <span class="title-aplication">Suplemento Esportivo:</span><br>A maltodextrina é um carboidrato complexo que consiste em uma cadeia de glicose. Ela é frequentemente usada em suplementos esportivos devido à sua capacidade de fornecer energia rápida. Quando consumida, a maltodextrina é digerida e absorvida pelo corpo de forma eficiente, aumentando os níveis de glicose no sangue e fornecendo energia imediatamente, tornando-a uma escolha popular para atletas que precisam de energia durante exercícios intensos.</div>
+                <div class="about-product"> <span class="title-aplication">Industria alimentícia:</span><br>Na indústria alimentícia, a maltodextrina é utilizada como espessante e agente de textura. Ela pode ser encontrada em uma variedade de produtos, desde molhos até sobremesas, para melhorar a consistência e a textura dos alimentos. Além disso, a maltodextrina é um ingrediente comum em alimentos processados, como biscoitos e cereais, devido à sua capacidade de aumentar o volume e a crocância dos produtos.</div>
+                <div class="about-product"> <span class="title-aplication">Nutrição clínica:</span><br>A maltodextrina também desempenha um papel importante na nutrição clínica, sendo usada em produtos médicos para nutrição enteral. Esses produtos são projetados para pacientes que não podem se alimentar normalmente e precisam de uma fonte de calorias e carboidratos controlada. <br>A maltodextrina é uma escolha comum nesses produtos devido à sua digestibilidade e capacidade de fornecer energia de forma consistente.
                 </div>
 
+            </div>
+        </div>
+        <br><br>
+    </section>
 
-         <div class="box-linux">
-                  <p>Para saber qual programa no Linux substitui um no Windows, você pode pesquisar na internet ou em fóruns especializados. Muitos sites e comunidades fornecem listas de alternativas de software, ajudando você a encontrar a melhor opção no Linux.</p>
-                  </div>
+    <!--Tipos do produto-->
 
-     
+    <section id="tipos">
+        <br>
+        <div class="headline">Tipos de maltodextrina</div>
+        <br><br>
+
+        <div id="main-tipos">
+            <div id="container-tipos">
+
+                <div class="about-tipos"> <span class="title-aplication">Maltodextrina de Baixo Peso Molecular: </span><br>Essa forma de maltodextrina é produzida por meio de um processo de hidrólise parcial do amido. Isso quebra as cadeias de amido em fragmentos menores, resultando em uma maltodextrina com peso molecular mais baixo. Como resultado, é rapidamente digerida e absorvida pelo organismo. Isso a torna uma escolha popular para atletas e praticantes de exercícios de alta intensidade, pois fornece energia de rápida disponibilidade. É frequentemente usada em bebidas esportivas, géis energéticos e suplementos pré-treino.</div>
+                <div class="about-tipos"> <span class="title-aplication">Maltodextrina de Alto Peso Molecular:</span><br> Ao contrário da variedade de baixo peso molecular, a maltodextrina de alto peso molecular é produzida a partir de um processo de hidrólise mais extenso, resultando em fragmentos maiores de amido. Isso a torna mais lenta para digerir e absorver. Como resultado, a maltodextrina de alto peso molecular proporciona uma liberação de energia mais gradual e sustentada. É muitas vezes usada em produtos destinados a fornecer energia de longa duração, como algumas barras de proteína ou suplementos pós-treino.</div>
+                
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Contato-->
+
+    <section id="contact">
+        <br>
+        <div id="con" class="headline">Contato</div>
+
+            <main>
+                <form action="#">
+
+                    <div id="container-form">
+                    <label for="idnome">Nome:</label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="idnome" name="idnome" required><br>
 
 
-      </section>
-
-      <br><br>
-
-      <section class="rep">
+                    <label for="idcpf">CPF:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="idcpf" name="idcpf" required><br>
 
 
-        <h1 class="title"> Repositórios Linux</h1>
-
-        <div class="main-linux">
-
-          <div class="box-linux">
-          <p>Repositórios: Em termos de sistemas operacionais, repositórios são locais de armazenamento de software que contêm pacotes ou programas disponíveis para instalação. Eles são gerenciados pelo sistema operacional ou pela distribuição e facilitam o processo de instalação, atualização e remoção de software. Os repositórios são essenciais para manter o sistema operacional e os programas atualizados de forma segura e eficiente. Os usuários podem acessar esses repositórios para baixar e instalar novos programas ou atualizar os existentes com apenas alguns comandos.
-
-            Distribuição Linux: Ubuntu</p>
-          </div> 
-
-          <div class="box-linux">
-            <p>O Ubuntu é uma das distribuições Linux mais populares e amplamente utilizadas. É conhecido por sua facilidade de uso e acessibilidade, tornando-o uma excelente escolha para iniciantes em Linux. O Ubuntu é desenvolvido pela Canonical Ltd. e baseado no sistema Debian. </p>
-            </div> 
-
-       </div>   
-
-      </section>
+                    <label for="idnumero">Número:</label>
+                    <input type="number" id="idnumero" name="idnumero" required><br>
 
 
-      <div class="direitos">      
+                    <label for="iddata">Data:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="date" id="iddata" name="iddata" required><br><br>
+
+
+                    <label for="idarea">Observação:</label><br>
+                    <textarea type="text" id="idarea" rows="3" cols="20" id="idarea"></textarea><br>
+
+
+                    <input id="submit" type="submit" align="center" value="Enviar ">
+                    
+                    </div>
+                </form>
+            </main>
+
+    </section>
+
+
+    <div class="direitos">      
         <h5 align="center"> Gabriel Batista 2023 - &copyTodos os direitos reservados  <br> Trabalho acadêmico-sem fins lucrativos</h5>      
     </div>
+      
 
-    
-    
+
+      
 </body>
 </html>

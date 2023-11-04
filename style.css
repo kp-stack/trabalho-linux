@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
@@ -13,7 +14,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: lavenderblush;
+    background-color: aliceblue;
 }
 
 
@@ -26,105 +27,323 @@ a{
     color: aliceblue;
     
 }
-
-/* Nav----------------------------*/
-
-.navbar{
-    margin:0px;
+.btn{
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
     background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    transition: 0.1s;
+
+}
+
+.headline{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+ /*--------------------------------------------------------------------------------*/   
+#navbar{
     width: 100%;
-    height: 20%;
-    position: fixed;
-   
+    background-color: rgb(19, 18, 18);
+    color: aliceblue;
+    height:100px;
 }
 
-.nav{
-    margin-top: 1%;
-    margin-left: 5% ;
+#navbar-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
-.nav-item{
-    margin-left: 20px;
-    font-size: 20px;
+#navbar-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 15px;
 }
 
-.background{
-    background: url('img/pinguim.jpg') no-repeat center center/cover;
-    height: 95vh;
-    width: 100%;
+#navbar-items li{
+    padding: 10px;
 }
 
-/* Main----------------------------*/
+.logo{
+    font-size: 2rem;
+    margin-left: 25px;
+}
 
-#main{
+
+ /*--------------------------------------------------------------------------------*/   
+/* Conteudo*/
+
+#text-box {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #030318;
+    background: url('img/w.jpg') no-repeat center center/cover;
+}
+  
+
+
+
+
+ /*--------------------------------------------------------------------------------*/   
+/*Fabricantes*/
+
+#fabricantes{
+    
+        width: 100%;
+        background: #eee;
+        color: #111;
+        padding: 50px;
+    }
+    
+    .main-companies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding-left: 30px;
+        margin-top: 80px;
+    }
+    
+    .companies {
+        display: inline-block;
+        width: 60%;
+        
+    }
+
+ /*--------------------------------------------------------------------------------*/   
+    /* About */
+#aplication {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#container-aplication {
+    width: 100%;
+    margin:auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title-aplication {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+ /*--------------------------------------------------------------------------------*/   
+/*Produto*/
+
+#product{
+    width: 100%;
     background-color: antiquewhite;
 }
 
-.main-linux{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    background-color: #222;
-    border-radius: 25px;
-    width: 70%;
+#container-product{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+}
+
+.about-product{
+    display: flex;
+    flex-direction: column;   
+    padding: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+ /*--------------------------------------------------------------------------------*/  
+ 
+ 
+ #tipos {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#container-tipos {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-left: 20%;
+}
+
+.about-tipos {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/*--------------------------------------------------------------------------------*/  
+
+#contact{
+    width: 100%;
+    height: 600px;
+    background-color: #eee;
     color: white;
-   
-
-    
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-    
-
+    background: url('img/w.jpg') no-repeat center center/cover;
 }
 
-.box-linux{
-    margin: 25px;
+#con{
+    color: #030318;
 }
 
+form{
+    display: block;
+    background-color: #333;
+    border: none;
+    border-radius: 40px;
+    margin: auto;
+    width: 300px;
+    height: 450px;
+    margin-top: 35px;
+}
 
-.title{
+#container-form{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 20px;
+}
 
-    margin-left: 40%;
-    margin-top: 5%;
-    font-size: 40px;
+input{
+    border-radius: 15px;
+    background-color: aliceblue;
     color: black;
+    border: none;
+    margin-top: 30px;
 }
-
-
-
-
-#duvidas{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    background-color: #222;
-    border-radius: 25px;
-    width: 70%;
+textarea{
+    resize: none;
+    border-radius: 15px;
+    border: none;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+label{
     color: white;
-   
-
-    
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-    
-
 }
 
-.box-linux{
-    margin: 25px;
+#submit{
+    margin-left: 30%;
+    width: 80px;
+    border: none;
+    height: 30px;
 }
 
 
-.rep{
-    height: 100vh;
-    background-color: antiquewhite;
-}
+
 
 .direitos{
     margin-bottom: 30px;
 }
 
 
+
+
+
+
+
+
+  @media screen and (max-width: 768px){ /*Só mudei o display grid para block, afim de empilhá-los*/
+
+/*-----------------------------------------------------------------*/    
+    #container-aplication {
+        width: 100%;
+        margin:auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .tips {
+        display: block;
+        background: #333;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .title-aplication {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+
+/*-----------------------------------------------------------------*/
+
+
+    #container-product{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-top: 10px;
+        display: block;
+    }
+    
+    .about-product{
+        display: block;
+        padding: 20px;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+/*-----------------------------------------------------------------*/
+    
+#container-tipos {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: 2%;
+}
+
+.about-tipos {
+    display: block;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+  }
